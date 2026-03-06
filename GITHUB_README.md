@@ -50,8 +50,8 @@ git remote add origin https://github.com/my_user_name/hello_d_ubuntu.git
 ```sh
 git push -u origin master
 ```
-- When prompted for username, enter your GitHub username (`my_user_name`)
-- When prompted for password, paste your PAT (Personal Access Token, that you saved in a secure location)
+When prompted for username, enter your GitHub username (`my_user_name`).
+When prompted for password, paste your PAT. The terminal will not display the PAT as you type or paste—this is normal for security. Just press Enter after pasting.
 
 ### 9. Done!
 Your project is now on GitHub. You can view it at:
