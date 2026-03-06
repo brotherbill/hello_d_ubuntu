@@ -37,20 +37,26 @@ git remote set-url origin https://github.com/my_user_name/hello_d_ubuntu.git
     - Go to https://github.com/settings/tokens
     - Click "Generate new token (classic)"
     - Name it, set an expiration (e.g., 30 days), and check `repo` scope
-    - Click "Generate token" and copy the token
+        - Click "Generate token" and copy the token
+
+### 5. If your Personal Access Token (PAT) has expired
+- When you try to push, GitHub will reject authentication and show an error like:
+    - `remote: Invalid username or password.`
+    - `fatal: Authentication failed for 'https://github.com/my_user_name/your_repo.git/'`
+- To fix this, generate a new PAT and use it the next time you are prompted for a password. The process is the same as before.
 - When prompted for password, paste your PAT instead.
 
-### 5. If you need to log out of GitHub in your browser
+### 6. If you need to log out of GitHub in your browser
 - Go to https://github.com
 - Click your profile icon (top right)
 - Click "Sign out"
 
-### 6. If you need to reset your GitHub password
+### 7. If you need to reset your GitHub password
 - Go to https://github.com/login
 - Click "Forgot password?"
 - Follow the instructions to reset your password
 
-### 7. If you need to change your branch name
+### 8. If you need to change your branch name
 - To rename the default branch:
 ```sh
 git branch -m main
@@ -60,13 +66,13 @@ git branch -m main
 git push -u origin main
 ```
 
-### 8. If you need to re-add the remote
+### 9. If you need to re-add the remote
 ```sh
 git remote remove origin
 git remote add origin https://github.com/my_user_name/hello_d_ubuntu.git
 ```
 
-### 9. If you need to start over
+### 10. If you need to start over
 - Delete the .git folder in your project:
 ```sh
 rm -rf .git
