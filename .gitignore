@@ -1,0 +1,15 @@
+# Ignore build artifacts and editor files
+hello_d
+hello_d.o
+*.exe
+*.obj
+*.dll
+*.pdb
+*.ilk
+*.out
+*.a
+*.so
+*.dSYM/
+.vscode/
+.DS_Store
+*.log
